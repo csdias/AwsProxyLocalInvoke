@@ -1,0 +1,9 @@
+
+# to complite and publish
+dotnet publish -c Release
+
+# to create an input sample (on the src/DebbugingExample folder)
+sam local generate-event apigateway aws-proxy > testApiRequest.json
+
+# to invoke the lambda function locally
+sam local invoke "DebuggingExampleFunction" --event testApiRequest.json --template serverless.template
