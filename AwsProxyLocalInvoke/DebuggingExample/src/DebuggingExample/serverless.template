@@ -12,6 +12,7 @@
         "CodeUri": "bin/Release/netcoreapp3.1/publish",
         "MemorySize": 256,
         "Timeout": 30,
+        "Tracing" : "Active",
         "Role": null,
         "Policies": [
           "AWSLambdaBasicExecutionRole"

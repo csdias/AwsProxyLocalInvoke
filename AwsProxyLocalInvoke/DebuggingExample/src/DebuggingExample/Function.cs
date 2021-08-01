@@ -18,13 +18,22 @@ namespace DebuggingExample
 
         public APIGatewayProxyResponse Get(APIGatewayProxyRequest request, ILambdaContext context)
         {
-            context.Logger.LogLine("Get Request\n");
+            LogMessage(context, "Processing request started");
+            APIGatewayProxyResponse response;
+            try
+            {
+                var result = processor.CurrentTimeUTC();
+                response = CreateResponse(result);
+                LogMessage(context, "Processing request succeeded.");
+            }
+            catch (Exception ex)
+            {
+                LogMessage(context, string.Format("Processing request failed - {0}", ex.Message));
+                response = CreateResponse(null);
+            }
 
-            var result = processor.CurrentTimeUTC();
-
-            return CreateResponse(result);
+            return response;
         }
-
 
         APIGatewayProxyResponse CreateResponse(DateTime? result) {
 
@@ -48,6 +57,16 @@ namespace DebuggingExample
             
             return response;
         }
+   
+        void LogMessage(ILambdaContext ctx, string msg)
+        {
+            ctx.Logger.LogLine(
+                string.Format("{0}:{1} - {2}", 
+                    ctx.AwsRequestId, 
+                    ctx.FunctionName,
+                    msg));
+        }   
+   
     }
 }
 

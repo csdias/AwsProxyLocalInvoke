@@ -7,3 +7,6 @@ sam local generate-event apigateway aws-proxy > testApiRequest.json
 
 # to invoke the lambda function locally
 sam local invoke "DebuggingExampleFunction" --event testApiRequest.json --template serverless.template
+
+# to run the api locally
+sam local start-api --template serverless.template
