@@ -19,3 +19,6 @@ sam deploy --template-file output-serverless.template --stack-name csdias-debugg
 
 # to invoke remotely
 dotnet lambda invoke-function DebuggingExample -–region eu-west-2
+
+# to bring the logs to show in the terminal
+sam logs -n DebuggingExample --region eu-west-2
