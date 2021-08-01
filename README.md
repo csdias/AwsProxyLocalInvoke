@@ -12,10 +12,10 @@ sam local invoke "DebuggingExampleFunction" --event testApiRequest.json --templa
 sam local start-api --template serverless.template
 
 # to create a package
-sam package --template-file serverless.template --output-template-file debugging-serverless.template --s3-bucket debugging-example-bucket --region eu-west-2
+sam package --template-file serverless.template --output-template-file output-serverless.template --s3-bucket csdias-debugging-example-bucket --region eu-west-2
 
-  # to deploy to aws
-  sam deploy --template-file debugging-serverless.template --stack-name DebuggingExample --capabilities CAPABILITY_IAM --region eu-west-2
+# to deploy to aws
+sam deploy --template-file output-serverless.template --stack-name csdias-debugging-template-stack --capabilities CAPABILITY_IAM --region eu-west-2 --s3-bucket csdias-debugging-example-bucket
 
 # to invoke remotely
 dotnet lambda invoke-function DebuggingExample -–region eu-west-2

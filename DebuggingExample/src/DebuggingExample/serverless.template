@@ -7,12 +7,11 @@
       "Type": "AWS::Serverless::Function",
       "Properties": {
         "FunctionName": "DebuggingExample",
-        "Handler": "DebuggingExample:: DebuggingExample.Functions::Get",
+        "Handler": "DebuggingExample::DebuggingExample.Functions::Get",
         "Runtime": "dotnetcore3.1",
         "CodeUri": "bin/Release/netcoreapp3.1/publish",
         "MemorySize": 256,
         "Timeout": 30,
-        "Tracing" : "Active",
         "Role": null,
         "Policies": [
           "AWSLambdaBasicExecutionRole"
