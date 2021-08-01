@@ -1,3 +1,17 @@
+install dotnet 5
+install aws toolkit
+install sam cli
+
+dotnet new -i Amazon.Lambda.Templates::*
+dotnet tool install --global Amazon.Lambda.Tools
+
+dotnet new serverless.EmptyServerless -n DebuggingExample
+cd DebuggingExample
+dotnet new sln -n DebuggingExample\
+dotnet sln DebuggingExample.sln add */*/*.csproj
+
+# to test 
+dotnet test
 
 # to compile and publish
 dotnet publish -c Release
