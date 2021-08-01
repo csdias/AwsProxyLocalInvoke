@@ -1,6 +1,7 @@
 install dotnet 5
 install aws toolkit
 install sam cli
+install docker
 
 dotnet new -i Amazon.Lambda.Templates::*
 dotnet tool install --global Amazon.Lambda.Tools
