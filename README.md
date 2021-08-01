@@ -11,6 +11,9 @@ sam local invoke "DebuggingExampleFunction" --event testApiRequest.json --templa
 # to run the api locally
 sam local start-api --template serverless.template
 
+# to create the bucket 
+aws s3api create-bucket --bucket csdias-debuggin-example-bucket --region eu—west-2
+
 # to create a package
 sam package --template-file serverless.template --output-template-file output-serverless.template --s3-bucket csdias-debugging-example-bucket --region eu-west-2
 
