@@ -1,7 +1,0 @@
-/Users/csdias/Acme/Training/serverless/csharp/AwsProxyLocalInvoke/DebuggingExample/src/DebuggingExample/bin/Release/netcoreapp3.1/publish/DebuggingExample.dll
-/Users/csdias/Acme/Training/serverless/csharp/AwsProxyLocalInvoke/DebuggingExample/src/DebuggingExample/bin/Release/netcoreapp3.1/publish/DebuggingExample.deps.json
-/Users/csdias/Acme/Training/serverless/csharp/AwsProxyLocalInvoke/DebuggingExample/src/DebuggingExample/bin/Release/netcoreapp3.1/publish/DebuggingExample.runtimeconfig.json
-/Users/csdias/Acme/Training/serverless/csharp/AwsProxyLocalInvoke/DebuggingExample/src/DebuggingExample/bin/Release/netcoreapp3.1/publish/DebuggingExample.pdb
-/Users/csdias/Acme/Training/serverless/csharp/AwsProxyLocalInvoke/DebuggingExample/src/DebuggingExample/bin/Release/netcoreapp3.1/publish/Amazon.Lambda.APIGatewayEvents.dll
-/Users/csdias/Acme/Training/serverless/csharp/AwsProxyLocalInvoke/DebuggingExample/src/DebuggingExample/bin/Release/netcoreapp3.1/publish/Amazon.Lambda.Core.dll
-/Users/csdias/Acme/Training/serverless/csharp/AwsProxyLocalInvoke/DebuggingExample/src/DebuggingExample/bin/Release/netcoreapp3.1/publish/Amazon.Lambda.Serialization.SystemTextJson.dll
